@@ -1,0 +1,50 @@
+/* Navigation styles */
+.logo{
+    height: 22px;
+    width: 192px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.nav {
+    display: flex;
+    background-color: #fafafa;
+    padding: 10px;
+    width: 1440px;
+    height: 130px;
+}
+
+.right a{
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 33px;
+    color: black;
+}
+
+/* Body styles */
+.paragraph {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 10%;
+    color: black;
+    display: flex;
+    justify-content: left;
+}
+
+.myname {
+    font-size: 78px;
+    font-family: kiona;
+    font-style: bold;
+    display: flex;
+    justify-content: left;
+}
+
+.heroimg {
+    background-image: url(../images/Frame\ 32.png);
+    background-position: right;
+}
