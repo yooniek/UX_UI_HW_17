@@ -4,7 +4,6 @@
     background-color: #fafafa;
     height: 130px;
 }
-.nav.hr{border-right:1px solid black}
 
 .left img{
 display: flex;
@@ -59,12 +58,18 @@ align-items:baseline;
     font-weight: bold;
  } 
 
+ .btn1 {
+     display: flex;
+     margin: 99px;
+     justify-content: center;
+     align-items: center;
+ }
+
+
 /* Footer styles */
-.hr{
-    border-top: 1px solid black;
-}
 
 .text p {
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: end;
     align-items: center;
