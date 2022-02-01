@@ -1,31 +1,72 @@
 /* Navigation styles */
-.logo{
-    background: url(../images/YOONHEE\ KIM.png);
-    background-position: left;
-    background-repeat: no-repeat;
-    height: 22px;
-    width: 192px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
 .nav {
     display: flex;
     background-color: #fafafa;
-    padding: 10px;
-    width: 1440px;
     height: 130px;
+}
+.nav.hr{border-right:1px solid black}
+
+.left img{
+display: flex;
+padding: 105px 5px;
+justify-content: right;
+align-items:baseline;
 }
 
 .right a{
+    color: black;
+    padding: 105px 65px;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: left;
-    align-items: flex-end;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    line-height: 33px;
-    color: black;
+    align-items: center;
+    float: left;
 }
+/* change color on hover*/
+ .right a:hover {
+    color: #606060;
+    font-weight: bold;
+ } 
 
 /* Body styles */
+.column {
+    color: #fafafa;
+}
+.text h1{
+    color: black;
+    font-size: 36px;
+    border-bottom: 1px black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.text h2{
+    color: black;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    display: inline-block; margin: 20px;
+    text-align: center;
+}
+/* change color on hover*/
+.text h2:hover{
+    color: #606060;
+    font-weight: bold;
+ } 
+
+/* Footer styles */
+.hr{
+    border-top: 1px solid black;
+}
+
+.text p {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+ }
+ 
