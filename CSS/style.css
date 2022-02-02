@@ -3,9 +3,11 @@ body {background-color: #fafafa;}
 /* Grid CSS*/ 
 .subheading h1{
     text-align: center;
+    align-items: center;
     width: 206px;
     height: 49px;
     margin: 50px auto;
+    color: #fafafa;
 }
 
 .subheading h2{
@@ -18,7 +20,7 @@ body {background-color: #fafafa;}
 #productgrid {
     margin: 0px 5%;
     display: grid;
-    min-height: 834px;
+    min-height: 600px;
     height: 10vh;
     grid-template-rows: 550px 550px 550px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -29,16 +31,19 @@ body {background-color: #fafafa;}
 #product1 {
     grid-area: product1;
     background-image: url(../images/foodforthought.png);
+    border-radius: 10px;
 }
 
 #product2{
     grid-area: product2;
     background-image: url(../images/plannie.png);
+    border-radius: 10px;
 }
 
 #product3 {
     grid-area: product3;
     background-image: url(../images/Frame\ 34.png);
+    border-radius: 10px;
 }
 
 .productgridarea {
@@ -51,21 +56,13 @@ body {background-color: #fafafa;}
     align-content: end;
 }
 
-.heading {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    color: black;
-    font-family: 'avenier next', sans-serif;
-    font-size: 36px;
-    justify-content: center;
-    align-items: center;
-}
 
 /* Navigation styles */
 #nav {
     display: flex;
     background-color: #fafafa;
     max-height: 130px;
+    border-bottom: 1px solid black;
 }
 
 .left img{
@@ -117,14 +114,25 @@ align-items:baseline;
     font-weight: bold;
  } 
 
+/* product1, product2, product3 change color on hover*/
+#product1:hover {
+    opacity: 0.3;
+}
 
+#product2:hover {
+    opacity: 0.3;
+}
+
+#product3:hover {
+    opacity: 0.3;
+}
 /* Footer styles */
 
 .text p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'avenier next', sans-serif;
     display: flex;
     justify-content: end;
-    align-items: center;
+    align-items: end;
     padding: 1%;
     border-top: 1px solid black;
  }
