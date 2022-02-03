@@ -2,19 +2,20 @@ body {background-color: #fafafa;}
 
 /* Grid CSS*/ 
 .subheading h1{
+    position: relative;
     text-align: center;
     align-items: center;
     width: 206px;
     height: 49px;
     margin: 50px auto;
+    margin-bottom: 10px;
     color: #fafafa;
 }
 
 .subheading h2{
-    text-align: center;
-    height: 33px;
-    margin: 50px auto;
     cursor: pointer;
+    display: inline;
+    align-items: center;
 }
 
 #productgrid {
@@ -32,18 +33,27 @@ body {background-color: #fafafa;}
     grid-area: product1;
     background-image: url(../images/foodforthought.png);
     border-radius: 10px;
+    backface-visibility: hidden;
+    opacity: 1;
+    transition: .5s ease;
 }
 
 #product2{
     grid-area: product2;
     background-image: url(../images/plannie.png);
     border-radius: 10px;
+    backface-visibility: hidden;
+    opacity: 1;
+    transition: 0.5s ease;
 }
 
 #product3 {
     grid-area: product3;
     background-image: url(../images/Frame\ 34.png);
     border-radius: 10px;
+    backface-visibility: hidden;
+    opacity: 1;
+    transition: 0.5s ease;
 }
 
 .productgridarea {
@@ -59,29 +69,21 @@ body {background-color: #fafafa;}
 
 /* Navigation styles */
 #nav {
-    display: flex;
     background-color: #fafafa;
-    max-height: 130px;
-    border-bottom: 1px solid black;
+    height: 100px;
+    margin: 0px 5%;
 }
 
-.left img{
-display: flex;
-padding: 105px 5px;
+#nav img{
+float: left;
+padding: 70px 5px;
 justify-content: right;
-align-items:baseline;
+margin-bottom: 0%;
+padding-bottom: 0%;
+
 }
 
-.navigation a{
-    color: black;
-    padding: 10px;
-    font-size: 24px;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    justify-content: left;
-    align-items: center;
-    float: left;
-}
+
 /* change color on hover*/
  .navigation a:hover {
     color: #606060;
@@ -89,15 +91,30 @@ align-items:baseline;
  } 
 
 /* Body styles */
+.subheading {
+    border-top: 1px solid black;
+    height: 156px;}
+
 .subheading h1{
     color: black;
     font-size: 36px;
-    border-bottom: 1px black;
+    border-bottom: 1px solid black;
     font-family: 'avenier next', sans-serif;
-    display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid black;
+}
+
+.navigation a {
+    color: black;
+    padding: 55px 5px;
+    padding-bottom: 0%;
+    font-size: 24px;
+    font-style: normal;
+    font-family: 'avenier next', sans-serif;
+    text-align: center;
+    float: right;
+    margin: 10px;
+    margin-bottom: 0px;
 }
 
 .subheading h2{
@@ -105,8 +122,8 @@ align-items:baseline;
     font-size: 24px;
     font-family: 'avenier next', sans-serif;
     font-style: bold;
-    display: inline-block; margin: 20px;
-    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 80px;
 }
 /* change color on hover*/
 .subheading h2:hover{
@@ -119,13 +136,77 @@ align-items:baseline;
     opacity: 0.3;
 }
 
+#product1:hover .productname1 {
+    opacity: 1;
+}
+
+.productname1 {
+    position: absolute;
+    top: 57%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: .5s ease;
+    opacity: 0;
+    -ms-transform: translate(-50%, -50%);
+}
+
+.producttext1 {
+    color: black;
+    font-size: 36px;
+    font-family: 'avenier next', sans-serif;
+}
+
 #product2:hover {
     opacity: 0.3;
+}
+
+#product2:hover .productname2 {
+    opacity: 1;
+}
+
+.productname2{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: .5s ease;
+    opacity: 0;
+    -ms-transform: translate(-50%, -50%);
+}
+
+.producttext2 {
+    color: black;
+    font-size: 36px;
+    font-family: 'avenier next', sans-serif;
 }
 
 #product3:hover {
     opacity: 0.3;
 }
+
+#product3:hover .productname3 {
+    opacity: 1;
+}
+
+.productname3{
+    position: absolute;
+    top: 57%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: .5s ease;
+    opacity: 0;
+    -ms-transform: translate(-50%, -50%);
+}
+
+.producttext3 {
+    color: black;
+    font-size: 36px;
+    font-family: 'avenier next', sans-serif;
+}
+
 /* Footer styles */
 
 .text p {
