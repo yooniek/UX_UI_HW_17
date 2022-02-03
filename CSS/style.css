@@ -12,12 +12,6 @@ body {background-color: #fafafa;}
     color: #fafafa;
 }
 
-.subheading h2{
-    cursor: pointer;
-    display: inline;
-    align-items: center;
-}
-
 #productgrid {
     margin: 0px 5%;
     display: grid;
@@ -83,6 +77,10 @@ padding-bottom: 0%;
 
 }
 
+.navigation {
+    align-items: center;
+    justify-content: space-evenly;
+}
 
 /* change color on hover*/
  .navigation a:hover {
@@ -91,9 +89,27 @@ padding-bottom: 0%;
  } 
 
 /* Body styles */
+
+.navigation a {
+    color: black;
+    padding: 57px 5px;
+    padding-bottom: 0%;
+    font-size: 24px;
+    font-style: normal;
+    font-family: 'avenier next', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    float: right;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
 .subheading {
     border-top: 1px solid black;
-    height: 156px;}
+    height: 156px;
+    align-items: center;
+    justify-content: center;
+}
 
 .subheading h1{
     color: black;
@@ -104,26 +120,15 @@ padding-bottom: 0%;
     align-items: center;
 }
 
-.navigation a {
-    color: black;
-    padding: 55px 5px;
-    padding-bottom: 0%;
-    font-size: 24px;
-    font-style: normal;
-    font-family: 'avenier next', sans-serif;
-    text-align: center;
-    float: right;
-    margin: 10px;
-    margin-bottom: 0px;
-}
-
 .subheading h2{
     color: black;
     font-size: 24px;
     font-family: 'avenier next', sans-serif;
     font-style: bold;
-    margin-top: 15px;
-    margin-bottom: 80px;
+    margin: 8px;
+    cursor: pointer;
+    display: inline;
+    align-items: center;
 }
 /* change color on hover*/
 .subheading h2:hover{
