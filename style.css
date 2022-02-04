@@ -60,7 +60,7 @@ body {background-color: #fafafa;}
     margin: 10px;
     cursor: pointer;
     display: grid;
-    align-content: end;
+    align-content: center;
 }
 
 
@@ -107,6 +107,11 @@ padding-bottom: 0%;
     margin-bottom: 0px;
 }
 
+.subheadingparent {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10px;
+}
 .subheading {
     border-top: 1px solid black;
     height: 156px;
@@ -121,23 +126,25 @@ padding-bottom: 0%;
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    
 }
 
-.subheading h2{
+.subheading1 h2{
     color: black;
     font-size: 24px;
     font-family: 'avenier next', sans-serif;
     font-style: bold;
-    margin: 8px;
     cursor: pointer;
-    position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    display: block;
+    width: 100%;
+    position: relative;
 }
 /* change color on hover*/
-.subheading h2:hover{
+.subheading1 h2:hover{
     color: #606060;
     font-weight: bold;
  } 
@@ -153,20 +160,23 @@ padding-bottom: 0%;
 }
 
 .productname1 {
-    position: relative;
     grid-area: product1;
+    padding-left: 20px;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    justify-content: center;
     transition: .5s ease;
     opacity: 0;
     -ms-transform: translate(-50%, -50%);
-}
-
-.producttext1 {
+    position: relative;
     color: black;
     font-size: 36px;
     font-family: 'avenier next', sans-serif;
 }
+
 
 #product2:hover {
     opacity: 0.3;
@@ -177,16 +187,14 @@ padding-bottom: 0%;
 }
 
 .productname2{
-    position: relative;
     grid-area: product2;
     transform: translate(-50%, -50%);
+    align-items: center;
     text-align: center;
     transition: .5s ease;
     opacity: 0;
     -ms-transform: translate(-50%, -50%);
-}
-
-.producttext2 {
+    position: relative;
     color: black;
     font-size: 36px;
     font-family: 'avenier next', sans-serif;
@@ -201,16 +209,14 @@ padding-bottom: 0%;
 }
 
 .productname3{
-    position: relative;
     grid-area: product3;
     transform: translate(-50%, -50%);
+    align-items: center;
     text-align: center;
     transition: .5s ease;
     opacity: 0;
     -ms-transform: translate(-50%, -50%);
-}
-
-.producttext3 {
+    position: relative;
     color: black;
     font-size: 36px;
     font-family: 'avenier next', sans-serif;
