@@ -26,25 +26,31 @@ body {background-color: #fafafa;}
 #product1 {
     grid-area: product1;
     border-radius: 10px;
+    background-image: url("foodforthought.png");
     backface-visibility: hidden;
     opacity: 1;
     transition: .5s ease;
+    position: relative;
 }
 
 #product2{
     grid-area: product2;
     border-radius: 10px;
     backface-visibility: hidden;
+    background-image: url("plannie.png");
     opacity: 1;
     transition: 0.5s ease;
+    position: relative;
 }
 
 #product3 {
     grid-area: product3;
     border-radius: 10px;
+    background-image: url("Frame34.png");
     backface-visibility: hidden;
     opacity: 1;
     transition: 0.5s ease;
+    position: relative;
 }
 
 .productgridarea {
@@ -114,6 +120,8 @@ padding-bottom: 0%;
     font-family: 'avenier next', sans-serif;
     justify-content: space-evenly;
     align-items: center;
+    position: relative;
+    
 }
 
 .subheading h2{
@@ -123,8 +131,10 @@ padding-bottom: 0%;
     font-style: bold;
     margin: 8px;
     cursor: pointer;
-    display: inline;
-    width: 100%;
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
 }
 /* change color on hover*/
 .subheading h2:hover{
@@ -143,9 +153,8 @@ padding-bottom: 0%;
 }
 
 .productname1 {
-    position: absolute;
-    top: 57%;
-    left: 20%;
+    position: relative;
+    grid-area: product1;
     transform: translate(-50%, -50%);
     text-align: center;
     transition: .5s ease;
@@ -168,9 +177,8 @@ padding-bottom: 0%;
 }
 
 .productname2{
-    position: absolute;
-    top: 57%;
-    left: 50%;
+    position: relative;
+    grid-area: product2;
     transform: translate(-50%, -50%);
     text-align: center;
     transition: .5s ease;
@@ -193,9 +201,8 @@ padding-bottom: 0%;
 }
 
 .productname3{
-    position: absolute;
-    top: 57%;
-    left: 80%;
+    position: relative;
+    grid-area: product3;
     transform: translate(-50%, -50%);
     text-align: center;
     transition: .5s ease;
