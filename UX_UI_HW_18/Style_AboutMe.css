@@ -1,0 +1,244 @@
+body {background-color: #fafafa;}
+
+/* Grid CSS*/ 
+.subheading h2{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    width: 206px;
+    height: 49px;
+    margin: 50px auto;
+    margin-bottom: 10px;
+    color: #fafafa;
+}
+
+#aboutgrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 600px;
+    height: 10vh;
+    grid-template-rows: 600px 365px ;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: 
+    "about1 about2";
+}
+
+#product1 {
+    grid-area: product1;
+    border-radius: 10px;
+    background-image: url("foodforthought.png");
+    backface-visibility: hidden;
+    opacity: 1;
+    transition: .5s ease;
+    position: relative;
+}
+
+#product2{
+    grid-area: product2;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    background-image: url("plannie.png");
+    opacity: 1;
+    transition: 0.5s ease;
+    position: relative;
+}
+
+#product3 {
+    grid-area: product3;
+    border-radius: 10px;
+    background-image: url("Frame34.png");
+    backface-visibility: hidden;
+    opacity: 1;
+    transition: 0.5s ease;
+    position: relative;
+}
+
+.productgridarea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+    cursor: pointer;
+    display: grid;
+    align-content: center;
+}
+
+
+/* Navigation styles */
+#nav {
+    background-color: #fafafa;
+    height: 100px;
+    margin: 0px 5%;
+}
+
+#nav img{
+float: left;
+padding: 70px 5px;
+justify-content: right;
+margin-bottom: 0%;
+padding-bottom: 0%;
+
+}
+
+.navigation {
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* change color on hover*/
+ .navigation a:hover {
+    color: #606060;
+    font-weight: bold;
+ } 
+
+/* Body styles */
+
+.navigation a {
+    color: black;
+    padding: 57px 5px;
+    padding-bottom: 0%;
+    font-size: 24px;
+    font-style: normal;
+    font-family: 'avenier next', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    float: right;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+
+.subheading {
+    border-top: 1px solid black;
+    height: 156px;
+
+}
+
+.subheading h1{
+    color: black;
+    font-size: 36px;
+    border-bottom: 1px solid black;
+    font-family: 'avenier next', sans-serif;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.subheading1 h2{
+    color: black;
+    font-size: 24px;
+    font-family: 'avenier next', sans-serif;
+    font-style: bold;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/* change color on hover*/
+.subheading1 h2:hover{
+    color: #606060;
+    font-weight: bold;
+ } 
+
+
+/* product1, product2, product3 change color on hover*/
+#product1:hover {
+    opacity: 0.3;
+}
+
+#product1:hover .productname1 {
+    opacity: 1;
+}
+
+.productname1 {
+    grid-area: product1;
+    padding-left: 20px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: .5s ease;
+    opacity: 0;
+    -ms-transform: translate(-50%, -50%);
+    position: relative;
+    color: black;
+    font-size: 36px;
+    font-family: 'avenier next', sans-serif;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+#product2:hover {
+    opacity: 0.3;
+}
+
+#product2:hover .productname2 {
+    opacity: 1;
+}
+
+.productname2{
+    grid-area: product2;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: .5s ease;
+    opacity: 0;
+    -ms-transform: translate(-50%, -50%);
+    color: black;
+    font-size: 36px;
+    font-family: 'avenier next', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#product3:hover {
+    opacity: 0.3;
+}
+
+#product3:hover .productname3 {
+    opacity: 1;
+}
+
+.productname3{
+    grid-area: product3;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: .5s ease;
+    opacity: 0;
+    -ms-transform: translate(-50%, -50%);
+    position: relative;
+    color: black;
+    font-size: 36px;
+    font-family: 'avenier next', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* Footer styles */
+
+.text p {
+    font-family: 'avenier next', sans-serif;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 1%;
+    border-top: 1px solid black;
+}
