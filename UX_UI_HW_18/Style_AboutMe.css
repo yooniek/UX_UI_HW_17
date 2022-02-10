@@ -14,9 +14,9 @@ body {background-color: #fafafa;}
 #aboutgrid {
     margin: 0px 5%;
     display: grid;
-    min-height: 600px;
+    min-height: 500px;
     height: 10vh;
-    grid-template-rows: 600px 365px ;
+    grid-template-rows: 600px 600px ;
     grid-template-columns: 1fr 1fr ;
     grid-template-areas: 
     "about1 about2";
@@ -92,6 +92,10 @@ padding-bottom: 0%;
     position: relative;
 }
 
+#about1 {
+    align-content: flex-start;
+}
+
 #about1 h1 {
     grid-area: product1;
     color: black;
@@ -113,6 +117,7 @@ padding-bottom: 0%;
     margin-top: 53px;
     margin-bottom: 53px;
     position: relative;
+    text-align: justify;
     display: grid;
 }
 
@@ -131,6 +136,23 @@ padding-bottom: 0%;
     display: grid;
 }
 
+#about1 button:hover {
+    color: white;
+    font-weight: bold;
+    font-family: 'avenier next', sans-serif;
+    background-color: #606060;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    display: grid;
+ } 
+
+#about2 {
+    align-content: flex-start;
+}
+
 #about2 h4 {
     grid-area: about2;
     color: black;
@@ -138,27 +160,39 @@ padding-bottom: 0%;
     font-family: 'avenier next', sans-serif;
     align-items: center;
     font-weight: lighter;
+    text-align: left;
     margin-top: 15px;
     margin-bottom: 15px;
     position: relative;
+    right: 40%;
 }
 
 /* Range Slider styles */
 
 .slidecontainer1{
     width: 50%;
+    position: relative;
+    right: -50%;
 }
 .slidecontainer2{
     width: 50%;
+    position: relative;
+    right: -50%;
 }
 .slidecontainer3{
     width: 50%;
+    position: relative;
+    right: -50%;
 }
 .slidecontainer4{
     width: 50%;
+    position: relative;
+    right: -50%;
 }
 .slidecontainer5{
     width: 50%;
+    position: relative;
+    right: -50%;
 }
 
 .slider {
@@ -187,7 +221,34 @@ padding-bottom: 0%;
     background: black;
 }
 
+/* Contact info styles */
+.contactinfo p {
+    color: black;
+    font-size: 20px;
+    font-family: 'avenier next', sans-serif;
+    font-weight: lighter;
+    position: relative;
+    display: grid;
+    text-align: center;
+}
 
+.contactinfo {
+    align-items: center;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+.contactinfo img {
+   margin: 3px;
+   align-items: center;
+   position: relative;
+   bottom: -12px;
+}
+
+.linkedin {
+    margin-bottom: 10px;
+}
 /* Footer styles */
 
 .text p {
@@ -197,4 +258,35 @@ padding-bottom: 0%;
     align-items: end;
     padding: 1%;
     border-top: 1px solid black;
+}
+
+/* Media Queries */
+@media only screen and (max-width:1000px) {
+    .navigation {
+        display: none;
+    }
+    #nav img {
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .subheading {
+        position: static;
+        margin: 10px;
+    }
+    #aboutgrid {
+        grid-template-rows: 600px 600px ;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "about1"
+        "about2"
+        ;
+    }
+    .contactinfo {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
 }
