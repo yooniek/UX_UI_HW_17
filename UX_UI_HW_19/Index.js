@@ -17,15 +17,13 @@ $(document).ready(function(){
     });
   });
 
-
   $(document).ready(function(){
-    $(".contact-flip").click(function(){
-      $('.contact-panel').slideDown(2000)
-    });
-  });
-
-  $(document).ready(function(){
-    $(".contact-flip").click(function(){
-      $('.contact-panel').slideUp(7000)
+    $('#about1 h1').on({
+      mouseenter: function(){
+        $(this).css("background-color", "lightgray");
+      },  
+      mouseleave: function(){
+        $(this).css("color", "white");
+      }, 
     });
   });
