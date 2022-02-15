@@ -6,7 +6,13 @@ function fade() {
     setTimeout(fade, 3000);
 
 $(document).ready(function(){
-    $("button").mouseenter(function(){
+    $("button").click(function(){
+      alert("YOONHEE KIM'S RESUME IS NOT AVAILABLE AT THE MOMENTS.");
+    });
+  });
+
+  $(document).ready(function(){
+    $('.resume').click(function(){
       alert("YOONHEE KIM'S RESUME IS NOT AVAILABLE AT THE MOMENTS.");
     });
   });
