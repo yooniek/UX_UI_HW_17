@@ -246,9 +246,37 @@ padding-bottom: 0%;
    bottom: -12px;
 }
 
-.linkedin {
-    margin-bottom: 10px;
+/* Contact info toggle styles */
+.contact-panel {
+    background-color: #d9d9d9;
+    height: 130px;
+    width: 100%;
+    position: relative;
+   bottom: -7px;
+   display:none;
+   z-index: 4;
 }
+
+.contact-panel img{
+    margin: 3px;
+    align-items: center;
+    position: relative;
+    display:none;
+}
+    
+.contact-panel p {
+    color: black;
+    font-size: 20px;
+    font-family: 'avenier next', sans-serif;
+    font-weight: lighter;
+    position: relative;
+    display: grid;
+    text-align: center;
+    display: none;
+}
+
+
+
 /* Footer styles */
 
 .text p {

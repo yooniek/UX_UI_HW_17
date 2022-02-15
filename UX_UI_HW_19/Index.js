@@ -16,3 +16,16 @@ $(document).ready(function(){
       alert("YOONHEE KIM'S RESUME IS NOT AVAILABLE AT THE MOMENTS.");
     });
   });
+
+
+  $(document).ready(function(){
+    $(".contact-flip").click(function(){
+      $('.contact-panel').slideDown(2000)
+    });
+  });
+
+  $(document).ready(function(){
+    $(".contact-flip").click(function(){
+      $('.contact-panel').slideUp(7000)
+    });
+  });
