@@ -17,13 +17,3 @@ $(document).ready(function(){
     });
   });
 
-  $(document).ready(function(){
-    $('#about1 h1').on({
-      mouseenter: function(){
-        $(this).css("background-color", "lightgray");
-      },  
-      mouseleave: function(){
-        $(this).css("color", "white");
-      }, 
-    });
-  });
