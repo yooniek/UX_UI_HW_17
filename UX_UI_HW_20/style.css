@@ -1,0 +1,161 @@
+body {background-color: #fafafa;}
+
+/* Navigation styles */
+.nav {
+    background-color: #fafafa;
+    height: 100px;
+    margin: 0px 5%;
+}
+
+.nav-img{
+padding: 70px 5px;
+margin-bottom: 0%;
+padding-bottom: 0%;
+margin: 0px 5%;
+position: relative;
+right: 40%;
+float: right;
+}
+
+.nav a{
+    color: black;
+    padding: 57px 5px;
+    padding-bottom: 0%;
+    font-size: 24px;
+    font-style: normal;
+    font-family: 'avenier next', sans-serif;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+
+/* change color on hover*/
+ .nav a:hover {
+    color: #606060;
+    font-weight: bold;
+ } 
+
+
+.landing-img {
+   position: relative;
+   right: -11%;
+}
+
+ /* Breadcrumb styles */
+
+ .breadcrumb {
+    font-style: normal;
+    font-family: 'avenier next', sans-serif;
+    margin: 20px 5%;
+}
+
+.breadcrumb-item a{
+    color: black;
+}
+
+.breadcrumb-item a:hover {
+    color: #606060;
+    font-weight: bold;
+}
+
+ /* Brief info styles */
+.brief-info {
+    margin: 0px 10%;
+} 
+.brief-info p1 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.brief-info p2 { 
+    margin-left: 30px;
+    font-size: 24px;
+}
+ /* Contents styles */
+ .Contents {
+    margin: 0px 20%;
+} 
+
+.Contents h1{
+    text-align: center;
+    font-size: 36px;
+    border-bottom: 1px solid black;
+    font-family: 'avenier next', sans-serif;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.Contents p1 {
+    font-weight: bold;
+    font-family: 'avenier next', sans-serif;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.Contents p2 { 
+    font-family: 'avenier next', sans-serif;
+    padding: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+.col-6 p2 { 
+    font-family: 'avenier next', sans-serif;
+    padding: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+.center p2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.Contents p3{ 
+    font-family: 'avenier next', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Contents p4{ 
+    font-family: 'avenier next', sans-serif;
+    font-size: 16px;
+    padding: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.col-6 img {
+    align-items: center;
+    position: relative;
+    top: 20%;
+}
+
+.card {
+    margin: 20px;
+    align-items: center;
+}
+
+.card-text {
+    text-align: center;
+}
+ /* Footer styles */
+
+.text p {
+    font-family: 'avenier next', sans-serif;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 1%;
+    border-top: 1px solid black;
+}
