@@ -86,7 +86,6 @@ float: right;
     position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-weight: bold;
 }
 .Contents p1 {
     font-weight: bold;
@@ -141,14 +140,29 @@ float: right;
     top: 20%;
 }
 
+.row img {
+    top: 30px;
+    bottom: 30px;
+}
+
 .card {
     margin: 20px;
     align-items: center;
+    position:relative;
+    right: -12%;
 }
 
 .card-text {
     text-align: center;
 }
+
+
+/* All projects card styles */
+.card-group {
+    position:relative;
+    left: -13%;
+}
+
  /* Footer styles */
 
 .text p {
