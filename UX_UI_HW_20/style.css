@@ -145,11 +145,12 @@ float: right;
     bottom: 30px;
 }
 
-.card {
+.card-motivation{
     margin: 20px;
     align-items: center;
     position:relative;
-    right: -12%;
+    right: -5%;
+    margin-top: 20px;
 }
 
 .card-text {
@@ -158,9 +159,9 @@ float: right;
 
 
 /* All projects card styles */
-.card-group {
+.card {
     position:relative;
-    left: -13%;
+    margin: 20px ;
 }
 
  /* Footer styles */
